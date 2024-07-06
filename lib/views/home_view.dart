@@ -1,249 +1,52 @@
 import 'package:flutter/material.dart';
+import 'package:task_1/model/image_model.dart';
+import 'package:task_1/widget/image_widget.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+  HomeView({super.key});
+  final List<ImageModel> imageView = [
+    ImageModel(image: 'assets/img1.jpg'),
+    ImageModel(image: 'assets/img2.jpg'),
+    ImageModel(image: 'assets/img3.jpg'),
+    ImageModel(image: 'assets/img4.jpeg'),
+    ImageModel(image: 'assets/img5.jpg'),
+    ImageModel(image: 'assets/img6.jpg'),
+    ImageModel(image: 'assets/img7.jpg'),
+    ImageModel(image: 'assets/img8.jpg'),
+    ImageModel(image: 'assets/img9.jpg'),
+    ImageModel(image: 'assets/img10.jpg'),
+    ImageModel(image: 'assets/img11.jpg'),
+    ImageModel(image: 'assets/img12.jpg'),
+    ImageModel(image: 'assets/img13.jpg'),
+    ImageModel(image: 'assets/img14.jpg'),
+    ImageModel(image: 'assets/img15.jpg'),
+    ImageModel(image: 'assets/img16.jpg'),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-          child: Text(
-            'Gallery',
-            style: TextStyle(color: Colors.grey[600]),
+        appBar: AppBar(
+          title: Center(
+            child: Text(
+              'Gallery',
+              style: TextStyle(color: Colors.grey[600]),
+            ),
           ),
         ),
-      ),
-      body: ListView(children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 19, right: 19),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img1.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img2.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img3.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img4.jpeg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img5.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img6.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img7.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img8.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img9.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img10.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img11.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img12.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img13.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img14.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 23,
-              ),
-              Row(
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img15.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 23,
-                  ),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(18),
-                    child: Image.asset(
-                      'assets/img16.jpg',
-                      fit: BoxFit.cover,
-                      height: 200,
-                      width: 175,
-                    ),
-                  ),
-                ],
-              ),
-            ],
+        body: Padding(
+          padding: const EdgeInsets.only(left: 15, right: 15, bottom: 18),
+          child: GridView.builder(
+            itemCount: imageView.length,
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 19,
+              mainAxisSpacing: 17,
+            ),
+            itemBuilder: (context, x) {
+              return ImageWidget(image: imageView[x]);
+            },
           ),
-        ),
-      ]),
-    );
+        ));
   }
 }
